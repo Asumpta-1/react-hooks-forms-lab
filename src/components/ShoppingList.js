@@ -9,6 +9,9 @@ function ShoppingList({ items }) {
   function handleCategoryChange(event) {
     setSelectedCategory(event.target.value);
   }
+  function searchChange(Event) {
+    setSelectedCategory(Event.target.value)
+  }
 
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All") return true;
